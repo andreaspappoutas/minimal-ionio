@@ -1,3 +1,8 @@
+<span id ="toTXT">0</span> <span>ects in total</span></br>
+<span>Απομένουν:  </span><span id="Ta240"></span></br>
+
+<div id="boxes">
+  
 {% assign posts = site.collections | where: 'label', include.l | first %}
 {% assign pages = posts.docs | sort: "title" %}
 {% for post in pages %}
@@ -7,3 +12,5 @@
     {% endif %}
   {% endif %}
 {% endfor %}
+
+</div>
